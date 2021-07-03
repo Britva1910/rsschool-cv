@@ -33,3 +33,10 @@ module.exports = function dateSample(sampleActivity) {
     }
 };
 ```
+## Experience:
+At the moment I have no working experience as a front-end developer. I have completed HTML Academy training courses on HTML and CSS and Code Basics JavaSсript.
+ 
+## Education:
+2006-2011 Belarusian State University, bachelor’s degree in law.
+ 
+English: elementary level (in the process of learning).

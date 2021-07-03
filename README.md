@@ -1,1 +1,1 @@
-https://github-username.github.io/rsschool-cv/cv
+https://Britva1910.github.io/rsschool-cv/cv

@@ -18,7 +18,8 @@ body {
 }
 
 .wrapper {
-    background-color: #323c4e;
+    background: rgb(0, 204, 204);
+    background: linear-gradient(0deg, rgba(0, 204, 204, 1) 0%, rgba(50, 60, 78, 0.9500175070028011) 58%);
     margin: 0;
     padding: 50px;
 }
@@ -42,8 +43,6 @@ body {
     width: auto;
     padding-right: 30px;
 }
-
-.about_me {}
 
 .name {
     font-family: Roboto;
@@ -135,6 +134,7 @@ body {
     border-top: 1px solid #00cccc;
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
 .footer-icon {
@@ -146,4 +146,5 @@ body {
 .icon {
     height: 20px;
     margin: 5px;
+    fill: #00cccc;
 }

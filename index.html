@@ -5,238 +5,386 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>CV</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/windows-10-light.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>My CV</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <div class="content">
-            <header class="header two-columns">
-                <img src="./src/IMG-avatar.jpg" alt="avatar" class="avatar">
-                <div class="about_me">
-                    <h1 class="name">
-                        ivan lashuk
-                    </h1>
-                    <h2 class="title">
-                        Student
-                    </h2>
-                    <h3 class="about">
-                        ABOUT ME
-                    </h3>
-                    <p class="text">
-                        I have been a professional and successful public servant with 10 year experience, I always wanted to be the best and the first but the main thing is to stay a human in any situation that's why now I am changing my life by getting new hard skills to become
-                        a front-end developer - the best one
-                    </p>
+
+        <!-- start nav -->
+        <header>
+            <nav class="navbar navbar-light bg-light fixed-top ">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">My CV</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">About me</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" data-toggle="collapse" href="#self_intraduction">Self intraduction</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">Contact details</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#hobbies">Hobbies</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#prof_skills">Professional skills</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#soft_skills">Soft skills</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#background">Academic background</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#sample_code">Sample code</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#my_projects" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">My projects</a>
+                                    <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                                        <li><a class="dropdown-item" href="#museum">Museum</a></li>
+                                        <li><a class="dropdown-item" href="#wildlife">Wildlife</a></li>
+                                        <li><a class="dropdown-item" href="#player">Castome video-player</a></li>
+                                        <li><a class="dropdown-item" href="#clock">Clock</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#career">Career histopy</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#languages">Languages spoken</a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-            </header>
-            <article class="layout-2-column">
-                <section class="section">
-                    <div class="section__wrapper">
-                        <p class="title">
-                            CONTACT DETAILS
-                        </p>
-                    </div>
-                    <div class="section__content-wrapper contact">
-                        <ul>
-
-                            <li>
-                                <img class="icon" src="./src/icon/email-round-color.svg" alt="">
-                                <a href="mailto:bbritva1910@gmail.com" class="email">bbritva1910@gmail.com</a>
-                            </li>
-                            <li>
-                                <img class="icon" src="./src/icon/github.svg" alt="">
-
-                                <a href="./src/icon/" class="email">Britva1910</a>
-                            </li>
-                            <li>
-                                <img class="icon" src="./src/icon/discord.svg" alt="">
-                                <a href="#" class="email">mezolit (@Britva1910)</a>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="section">
-                    <div class="section__wrapper">
-                        <p class="title">
-                            HOBBIES
-                        </p>
-                    </div>
-                    <div class="section__content-wrapper">
-                        <ul>
-                            <li>
-                                DIY
-                            </li>
-                            <li>
-                                Hunting
-                            </li>
-                            <li>
-                                Travelling
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="section">
-                    <div class="section__wrapper">
-                        <p class="title">
-                            PROFESSIONAL SKILLS
-                        </p>
-                    </div>
-                    <div class="section__content-wrapper">
-                        <ul>
-                            <li>
-                                HTML/CSS/JavaScript (in the process of learning)
-                            </li>
-                            <li>
-                                SCSS/SASS
-                            </li>
-                            <li>
-                                Figma/Photoshop
-                            </li>
-
-                            <li>
-                                Git (basic level),
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="section">
-                    <div class="section__wrapper">
-                        <p class="title">
-                            SOFT SKILLS
-                        </p>
-                    </div>
-                    <div class="section__content-wrapper">
-                        <p>
-                            My current work calls for permanent concentration,flexibility and readiness to study all the time because of the necessity to erify and estimate big amounts of new information in different life spheres, and to make quick decisions.
-                        </p>
-                    </div>
-                </section>
-                <section class="section">
-                    <div class="section__wrapper">
-                        <p class="title">
-                            ACADEMIC BACKGROUND
-                        </p>
-                    </div>
-                    <div class="section__content-wrapper">
-                        <ul>
-                            <li>
-                                <h4>
-                                    ROLLING SCOPES SCHOOL
-                                </h4>
-                                <p class="text-bg">
-                                    Front-end developer
-                                </p>
-                                <p class="text-bg">
-                                    2021-present time
-                                </p>
-                            </li>
-                            <li>
-                                <h4>
-                                    HTML ACADEMY
-                                </h4>
-                                <p class="text-bg">
-                                    Training courses on HTML and CSS and Code Basics JavaSсript
-
-                                </p>
-                                <p class="text-bg">
-                                    2020-2021
-                                </p>
-                            </li>
-                            <li>
-                                <h4>
-                                    BELARUSIAN STATE UNIVERSITY
-                                </h4>
-                                <p class="text-bg">
-                                    Bachelor's degree in law
-                                </p>
-                                <p class="text-bg">
-                                    2006-2011
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <section class="section">
-                    <div class="section__wrapper">
-                        <p class="title">
-                            sample code
-                        </p>
-                    </div>
-                    <pre>
-                <code>
-                  function arithmetic(a, b, operator){
-                    if(operator === "add"){
-                      return a + b;
-                    } else if(operator === "subtract"){
-                      return a - b;
-                    } else if(operator === "multiply"){
-                      return a * b;
-                    } else if(operator === "divide"){
-                      return a/b;
-                    }
-                  }
-                </code>
-              </pre>
-                </section>
-                <section class="section">
-                    <div class="section__wrapper">
-                        <p class="title">
-                            CAREER HISTORY
-                        </p>
-                    </div>
-                    <div class="section__content-wrapper">
-                        <h4>
-                            PUBLIC SERVANT<br>One of the public institutions of the Republiс of Belarus | 01.08.2011-present time
-
-                        </h4>
-                        <ul>
-                            <li>
-                                Supervision of compliance with legislation in various spheres of public life
-                            </li>
-                            <li>
-                                Handling citizens complaints
-                            </li>
-                            <li>
-                                Training of young public servants
-                            </li>
-                        </ul>
+            </nav>
+        </header>
+        <div class="wrapper-content bg">
+            <!-- end nav -->
+            <main>
+                <section class="container ">
+                    <div class="row">
+                        <div class="col-3 p-0 mt-3">
+                            <img src="./src/IMG-avatar.jpg" class="img-fluid " alt="avatar">
+                        </div>
+                        <div class="col-9 mt-5">
+                            <div class="container">
+                                <div class="row">
+                                    <h1 class="fs-1">
+                                        IVAN LASHUK
+                                    </h1>
+                                </div>
+                                <div class="row">
+                                    <h3 class="text-dark">
+                                        FRONT-END DEVOLOPER
+                                    </h3>
+                                </div>
+                                <div class="row">
+                                    <h2>
+                                        ABOUT ME
+                                    </h2>
+                                </div>
+                                <div class="row">
+                                    <p class="text-dark">
+                                        I have been a professional and successful public servant with 10 year experience, I always wanted to be the best and the first but the main thing is to stay a human in any situation that's why now I am changing my life by getting new hard skills to become
+                                        a front-end developer - the best one
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
+                <div class="container bg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 id="self_intraduction" class="block-title d-block">
+                                    SELF INRTADUCTION
+                                </h2>
+                                <div class="ratio ratio-16x9">
+                                    <video src="./src/video.mp4" controls></video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="container">
+                                <div class="row">
+                                    <h2 id="contact" class="block-title">CONTACT DETAILS</h2>
+                                </div>
+                                <div class="row">
+                                    <ul>
+                                        <li class="text-dark">
+                                            <a class="text-dark" href="">bbritva1910@gmail.com</a>
+                                        </li>
+                                        <li class="text-dark">
+                                            <a class="text-dark" href="">Britva1910</a>
+                                        </li>
+                                        <li class="text-dark">
+                                            <a class="text-dark" href="">mezolit (@Britva1910)</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="container">
+                                <div class="row">
+                                    <h2 id="hobbies" class="block-title">HOBBIES</h2>
+                                </div>
+                                <div class="row">
+                                    <ul>
+                                        <li class="text-dark">
+                                            DIY
+                                        </li>
+                                        <li class="text-dark">
+                                            Hunting
+                                        </li>
+                                        <li class="text-dark">
+                                            Travelling
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="container">
+                                <div class="row">
+                                    <h2 id="prof_skills" class="block-title">PROFESSIONAL SKILLS</h2>
+                                </div>
+                                <div class="row">
+                                    <ul>
+                                        <li class="text-dark">
+                                            HTML/CSS/JavaScript (in the process of learning)
+                                        </li>
+                                        <li class="text-dark">
+                                            SCSS/SASS
+                                        </li>
+                                        <li class="text-dark">
+                                            Figma/Photoshop
+                                        </li>
+                                        <li class="text-dark">
+                                            Git (basic level),
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="container">
+                                <div class="row">
+                                    <h2 id="soft_skills" class="block-title">SOFT SKILLS</h2>
+                                </div>
+                                <div class="row">
+                                    <p class="text-dark">
+                                        My current work calls for permanent concentration,flexibility and readiness to study all the time because of the necessity to erify and estimate big amounts of new information in different life spheres, and to make quick decisions.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="container">
+                                <div class="row">
+                                    <h2 id="background" class="block-title">ACADEMIC BACKGROUND</h2>
+                                </div>
+                                <div class="row">
+                                    <ul>
+                                        <li class="text-dark">
+                                            ROLLING SCOPES SCHOOL
+                                            <p class="text-dark">
+                                                Front-end developer 2021-present time
+                                            </p>
 
-                <section class="section">
-                    <div class="section__wrapper">
-                        <p class="title">
-                            LANGUAGES SPOKEN
-                        </p>
+                                        </li>
+                                        <li class="text-dark">
+                                            HTML ACADEMY
+                                            <p class="text-dark">
+                                                Training courses on HTML and CSS and Code Basics JavaSсript
+                                            </p>
+                                        </li>
+                                        <li class="text-dark">
+                                            BELARUSIAN STATE UNIVERSITY
+                                            <p class="text-dark">Bachelor's degree in law 2006-2011
+
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="container">
+                                <div class="row">
+                                    <h2 id="sample_code" class="block-title ">SAMPLE CODE</h2>
+                                </div>
+                                <div class="row">
+                                    <pre>
+                                <code class="text-dark">
+function arithmetic(a, b, operator){
+    if(operator === "add"){
+        return a + b;
+    } else if(operator === "subtract"){
+        return a - b;
+    } else if(operator === "multiply"){
+        return a * b;
+    } else if(operator === "divide"){
+        return a/b;
+    }
+}
+                                </code>
+                            </pre>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="section__content-wrapper">
-                        <ul>
-                            <li>
-                                Belarusian C1
-                            </li>
-                            <li>
-                                Russian C2
-                            </li>
-                            <li>
-                                English A1
-                            </li>
-                        </ul>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <h2 id="my_projects" class="block-title d-block">
+                                    MY PROJECTS
+                                </h2>
+                                <div class="row">
+                                    <figure class="col card-flex">
+                                        <a target=»_blank» href="https://gifted-villani-6de24a.netlify.app/">
+                                            <div id="museum" class="card">
+                                                <img src="./src/museum.png" class="card-img-top" alt="scrin">
+                                                <div class="card-body">
+                                                    <p class="card-text">Проект выполнен в рамках Stage 0 RS School. В ходе работы над проектом разработана архитектура на основе паттерана 7 - 1</p>
+                                                    <span class="html-tag ">HTML</span><span class="css-tag">CSS</span> <span class="scss-tag">SCSS</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </figure>
+
+                                    <figure class="col card-flex">
+                                        <a target=»_blank» href="https://britva1910-custom-video-player.netlify.app/">
+                                            <div id="wildlife" class="card">
+                                                <img src="./src/wildlife.png" class="card-img-top" alt="scrin">
+                                                <div class="card-body">
+                                                    <p class="card-text">Реализована верстка макета на HTML and CSS.</p>
+                                                    <span class="html-tag ">HTML</span><span class="css-tag">CSS</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </figure>
+                                </div>
+                                <div class="row">
+                                    <figure class="col card-flex">
+                                        <a target=»_blank» href="https://gifted-villani-6de24a.netlify.app/">
+                                            <div id="player" class="card">
+                                                <img src="./src/video-player.png" class="card-img-top" alt="scrin">
+                                                <div class="card-body">
+                                                    <p class="card-text">В ходе проекта создан кастомный видеоплейер, поддерживающий основной функционал, схожий с youtube</p>
+                                                    <span class="html-tag ">HTML</span><span class="css-tag">CSS</span><span class="js-tag">JS</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </figure>
+                                    <figure class="col card-flex">
+                                        <a target=»_blank» href="https://gifted-villani-6de24a.netlify.app/">
+                                            <div id="clock" class="card">
+                                                <img src="./src/js-clock.png" class="card-img-top" alt="scrin">
+                                                <div class="card-body">
+                                                    <p class="card-text">На JS реализованы аналоговые часы, показывающие текущее время, а также время в пяти различных часовых поясах. Фон меняется в зависимости от вермени суток</p>
+                                                    <span class="html-tag ">HTML</span><span class="css-tag">CSS</span><span class="js-tag">JS</span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </section>
-            </article>
-            <footer class="footer">
-                <div class="icons-wrapper">
-                    <a href="https://rs.school/js/"><img class="footer-icon" src="./src/icon/rs_school_js.svg" alt="rs-school">
-                    </a>
-                    <a href="https://github.com/Britva1910"><img class="footer-icon" src="./src/icon/github.svg" alt="github">
-                    </a>
+                    <div class="row">
+                        <div class="col">
+                            <div class="container">
+                                <div class="row">
+                                    <h2 id="career" class="block-title">CAREER HISTORY</h2>
+                                </div>
+                                <div class="row">
+                                    <p class="text-dark">
+                                        PUBLIC SERVANT One of the public institutions of the Republiс of Belarus | 01.08.2011-present time
+                                    </p>
+                                    <ul>
+                                        <li class="text-dark">
+                                            Supervision of compliance with legislation in various spheres of public life</li>
+                                        <li class="text-dark">
+                                            Handling citizens complaints
+                                        </li>
+                                        <li class="text-dark">
+                                            Training of young public servants
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="container">
+                                <div class="row">
+                                    <h2 id="languages" class="block-title">LANGUAGES SPOKEN</h2>
+                                </div>
+                                <div class="row">
+                                    <ul>
+                                        <li class="text-dark">
+                                            Belarusian C1
+                                        </li>
+                                        <li class="text-dark">
+                                            Russian C2
+                                        </li>
+                                        <li class="text-dark">
+                                            English A1
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <p class="text">2021</p>
+            </main>>
+            <footer class="container">
+                <div class="row row justify-content-between">
+                    <div class="col footer-wrapper">
+                        <a target=»_blank» href="https://rs.school/js/" class="rs-icon"></a>
+                    </div>
+                    <div class="col fs-2 footer-wrapper">
+                        <span>2021</span>
+                    </div>
+                    <div class="col footer-wrapper">
+                        <a target=»_blank» href="https://github.com/Britva1910" class="gh-icon"></a>
+                    </div>
+                </div>
             </footer>
         </div>
+
     </div>
+    <script src="./js/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

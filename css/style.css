@@ -32,6 +32,7 @@ span {
 }
 
 .img-fluid {
+    margin-top: 60px;
     max-width: 85%;
     position: relative;
     left: 24px;
@@ -69,6 +70,26 @@ span {
 
 .row>* {
     height: 100%;
+}
+
+.card-body {
+    height: 185px;
+}
+
+.card-title {
+    background-color: rgb(0, 204, 204);
+    border-radius: 2px;
+    margin-bottom: 0;
+    color: black;
+    text-align: center;
+}
+
+.card-title-2 {
+    background-color: rgb(0, 204, 204);
+    border-radius: 2px;
+    margin-bottom: 0;
+    color: black;
+    text-align: center;
 }
 
 .html-tag {
@@ -156,5 +177,8 @@ span {
     }
     pre code {
         font-size: 10px;
+    }
+    .card-body {
+        height: 230px;
     }
 }

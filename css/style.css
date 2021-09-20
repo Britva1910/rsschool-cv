@@ -68,6 +68,11 @@ span {
     justify-content: center;
 }
 
+.card-flex:hover {
+    transform: scale(1.05);
+    transition-duration: .7s;
+}
+
 .row>* {
     height: 100%;
 }

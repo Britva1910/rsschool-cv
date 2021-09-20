@@ -1,5 +1,5 @@
 console.log('Самооценка')
-console.log('ссылка на PR')
+console.log('PR - https://github.com/Britva1910/rsschool-cv/pull/7')
 console.log('Верстка валидная, результат проверки - Document checking completed.No errors or warnings to show + 10')
 console.log('Вёрстка семантическая. В коде страницы присутствуют семантические теги HTML5, figure, footer, header, main, nav, section, используются заголовки h1-h3, h5. Заголовок h1 только один - по 2 балла за каждый элемент, итого +20')
 console.log('Для оформления СV используются css-стили. стилизовано более 10 элементов + 10 ')
